@@ -1,10 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  base: '/WeatherProject/', // Match your GitHub Pages URL path
   plugins: [react()],
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
 });
